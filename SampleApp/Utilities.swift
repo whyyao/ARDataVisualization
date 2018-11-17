@@ -649,8 +649,8 @@ func generateRandomNumber(withRange range: Range<Int>) -> Double {
     return Double(arc4random_uniform(UInt32(range.upperBound - range.lowerBound))) + Double(range.lowerBound)
 }
 
-func generateNumbers(fromDataSampleWithIndex index: Int) -> [[Double]]? {
-    let resourceName = String(format: "DataSample_%i", index)
+func generateFruitsValue() -> [[Double]]? {
+    let resourceName = "DataSample_1"
     
     guard let dataPath = Bundle.main.path(forResource: resourceName, ofType: "csv") else {
         print(String(format: "Could Not Load Data Sample File %@", resourceName))
@@ -672,8 +672,8 @@ func generateNumbers(fromDataSampleWithIndex index: Int) -> [[Double]]? {
     return data
 }
 
-func parseSeriesLabels(fromDataSampleWithIndex index: Int) -> [String]? {
-    let resourceName = String(format: "DataSample_%i", index)
+func parseSeriesLabels() -> [String]? {
+        let resourceName = "DataSample_1"
     
     guard let dataPath = Bundle.main.path(forResource: resourceName, ofType: "csv") else {
         print(String(format: "Could Not Load Data Sample File %@", resourceName))
@@ -692,8 +692,8 @@ func parseSeriesLabels(fromDataSampleWithIndex index: Int) -> [String]? {
     return seriesLabels
 }
 
-func parseIndexLabels(fromDataSampleWithIndex index: Int) -> [String]? {
-    let resourceName = String(format: "DataSample_%i", index)
+func parseIndexLabels() -> [String]? {
+       let resourceName = "DataSample_1"
     
     guard let dataPath = Bundle.main.path(forResource: resourceName, ofType: "csv") else {
         print(String(format: "Could Not Load Data Sample File %@", resourceName))

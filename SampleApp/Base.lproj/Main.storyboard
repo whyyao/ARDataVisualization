@@ -337,9 +337,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-eb-9Te">
-                                                    <rect key="frame" x="90.5" y="48" width="194" height="29"/>
+                                                    <rect key="frame" x="129" y="48" width="117" height="29"/>
                                                     <segments>
-                                                        <segment title="Random"/>
                                                         <segment title="Fruit"/>
                                                         <segment title="Growth"/>
                                                     </segments>

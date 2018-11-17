@@ -114,18 +114,17 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
             barChart = nil
         }
         
-        var values = generateRandomNumbers(withRange: 0..<50, numberOfRows: settings.numberOfSeries, numberOfColumns: settings.numberOfIndices)
-        var seriesLabels = Array(0..<values.count).map({ "Series \($0)" })
-        var indexLabels = Array(0..<values.first!.count).map({ "Index \($0)" })
+        //        var values = generateRandomNumbers(withRange: 0..<50, numberOfRows: settings.numberOfSeries, numberOfColumns: settings.numberOfIndices)
+        //        var seriesLabels = Array(0..<values.count).map({ "Series \($0)" })
+        //        var indexLabels = Array(0..<values.first!.count).map({ "Index \($0)" })
         
         
-        if settings.dataSet > 0 {
-            values = generateNumbers(fromDataSampleWithIndex: settings.dataSet - 1) ?? values
-            seriesLabels = parseSeriesLabels(fromDataSampleWithIndex: settings.dataSet - 1) ?? seriesLabels
-            indexLabels = parseIndexLabels(fromDataSampleWithIndex: settings.dataSet - 1) ?? indexLabels
-        }
+        var values = generateFruitsValue()
+        var seriesLabels = parseSeriesLabels()
+        var indexLabels = parseIndexLabels()
         
-        dataSeries = ARDataSeries(withValues: values)
+        
+        dataSeries = ARDataSeries(withValues: values!)
         if settings.showLabels {
             dataSeries?.seriesLabels = seriesLabels
             dataSeries?.indexLabels = indexLabels
@@ -187,7 +186,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
-     
+        
         return node
     }
     
@@ -227,7 +226,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
         guard let barChart = barChart,
             let pointOfView = sceneView.pointOfView,
             sceneView.isNode(barChart, insideFrustumOf: pointOfView) == true else {
-            return
+                return
         }
         
         if rotationGestureRecognizer.state == .began {
