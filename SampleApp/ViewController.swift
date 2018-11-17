@@ -119,9 +119,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
         //        var indexLabels = Array(0..<values.first!.count).map({ "Index \($0)" })
         
         
-        var values = generateFruitsValue()
-        var seriesLabels = parseFruitsSeries()
-        var indexLabels = parseFruitsIndex()
+        var values = generateValue(year: "1978", month: "10")
+        print(values!)
+        var seriesLabels = generateSeries(year: "1978", month: "10")
+        var indexLabels = parseIndex(year: "1978", month: "10")
         
         
         dataSeries = ARDataSeries(withValues: values!)

@@ -640,6 +640,52 @@ func generateFruitsValue() -> [[Double]]? {
     return data
 }
 
+func generateValue(year: String, month: String) -> [[Double]]? {
+    let filename = "data"
+    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", filename))
+        return nil
+    }
+    
+    var data = [[Double]]()
+    if let dataString = try? String(contentsOfFile: dataPath) {
+        let lines = dataString.components(separatedBy: "\r\n")
+        let headerEntries = lines[0].components(separatedBy: ",")
+        for line in lines[1...] {
+            let lineEntries = line.components(separatedBy: ",")
+            let year = lineEntries[0]
+            if (lineEntries.count == headerEntries.count) {
+                if (year != year) {
+                    continue
+                }
+                let month = lineEntries[1]
+                if (month != month) {
+                    continue
+                }
+                print(lineEntries[9])
+                let double : Double = Double(lineEntries[9])!
+                print(double)
+                var entry = [Double]()
+                entry.append(Double(double))
+                data.append(entry)
+                
+//                let day = Int(lineEntries[2])
+//                if (day! > 10){
+//                    break;
+//                }
+//
+                if (year != year) {
+                    break
+                }
+                if (month != month) {
+                    break
+                }
+            }
+        }
+    }
+    return data
+}
+
 
 func parseFruitsSeries() -> [String]? {
     let resourceName = "DataSample_1"
@@ -661,6 +707,45 @@ func parseFruitsSeries() -> [String]? {
     return seriesLabels
 }
 
+func generateSeries(year: String, month: String) -> [String]? {
+    let filename = "data"
+    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", filename))
+        return nil
+    }
+    var seriesLabels: [String] = []
+    if let dataString = try? String(contentsOfFile: dataPath) {
+        let lines = dataString.components(separatedBy: "\n")
+        for line in lines[1...] {
+            let lineEntries = line.components(separatedBy: ",")
+            let year = lineEntries[0]
+            if (year != year) {
+                continue
+            }
+            let month = lineEntries[1]
+            if (month != month) {
+                continue
+            }
+            if let seriesLabel = lineEntries.first {
+                seriesLabels.append(seriesLabel)
+            }
+            
+//            let day = Int(lineEntries[2])
+//            if (day! > 10){
+//                break;
+//            }
+            
+            if (year != year) {
+                break
+            }
+            if (month != month) {
+                break
+            }
+        }
+    }
+    return seriesLabels
+}
+
 func parseFruitsIndex() -> [String]? {
     let resourceName = "DataSample_1"
     
@@ -676,6 +761,23 @@ func parseFruitsIndex() -> [String]? {
                 indexLabels.append(indexLabel)
             }
         }
+    }
+    return indexLabels
+}
+
+func parseIndex(year: String, month: String) -> [String]? {
+    let filename = "data"
+    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", filename))
+        return nil
+    }
+    var indexLabels: [String] = []
+    if let dataString = try? String(contentsOfFile: dataPath) {
+        let headerLine = dataString.components(separatedBy: "\n").first
+        //        for indexLabel in line.components(separatedBy: ",").dropFirst() {
+        //
+        //        }
+        indexLabels = ["Q"]
     }
     return indexLabels
 }
