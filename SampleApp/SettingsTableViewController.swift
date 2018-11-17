@@ -23,17 +23,13 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var opacitySlider: UISlider!
     @IBOutlet weak var opacityLabel: UILabel!
     @IBOutlet weak var labelSwitch: UISwitch!
-    @IBOutlet weak var seriesLabel: UILabel!
-    @IBOutlet weak var indicesLabel: UILabel!
-    @IBOutlet weak var seriesSlider: UISlider!
-    @IBOutlet weak var indicesSlider: UISlider!
     @IBOutlet weak var widthLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var lengthLabel: UILabel!
     @IBOutlet weak var widthSlider: UISlider!
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var lengthSlider: UISlider!
-    @IBOutlet weak var randomDataSetCell: UITableViewCell!
+    
     @IBOutlet weak var dataSetSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -52,10 +48,6 @@ class SettingsTableViewController: UITableViewController {
         opacitySlider.value = settings.barOpacity
         opacityLabel.text = String(format: "%.1f", arguments: [opacitySlider.value])
         labelSwitch.isOn = settings.showLabels
-        seriesLabel.text = "Series: \(settings.numberOfSeries)"
-        indicesLabel.text = "Indices: \(settings.numberOfIndices)"
-        seriesSlider.value = Float(settings.numberOfSeries)
-        indicesSlider.value = Float(settings.numberOfIndices)
         widthSlider.value = settings.graphWidth
         heightSlider.value = settings.graphHeight
         lengthSlider.value = settings.graphLength
@@ -63,11 +55,6 @@ class SettingsTableViewController: UITableViewController {
         heightLabel.text = String(format: "Height: %.1f", settings.graphHeight)
         lengthLabel.text = String(format: "Length: %.1f", settings.graphLength)
         dataSetSegmentedControl.selectedSegmentIndex = settings.dataSet
-        if dataSetSegmentedControl.selectedSegmentIndex != 0 {
-            randomDataSetCell.isHidden = true
-        } else {
-            randomDataSetCell.isHidden = false
-        }
     }
     
     // MARK: Actions
@@ -99,11 +86,6 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func handleDataSetValueChange(_ sender: UISegmentedControl) {
         settings?.dataSet = sender.selectedSegmentIndex
-        if sender.selectedSegmentIndex == 0 {
-            randomDataSetCell.isHidden = false
-        } else {
-            randomDataSetCell.isHidden = true
-        }
     }
         
     @IBAction func handleWidthSliderValueChange(_ sender: UISlider) {
@@ -119,16 +101,6 @@ class SettingsTableViewController: UITableViewController {
     @IBAction func handleLengthSliderValueChange(_ sender: UISlider) {
         lengthLabel.text = String(format: "Length: %.1f", sender.value)
         settings?.graphLength = sender.value
-    }
-    
-    @IBAction func handleSeriesSliderValueChanged(_ sender: UISlider) {
-        seriesLabel.text = "Series: \(Int(sender.value))"
-        settings?.numberOfSeries = Int(sender.value)
-    }
-    
-    @IBAction func handleIndicesSliderValueChanged(_ sender: UISlider) {
-        indicesLabel.text = "Indices: \(Int(sender.value))"
-        settings?.numberOfIndices = Int(sender.value)
     }
     
     @IBAction func handleTapSave(_ sender: Any) {
