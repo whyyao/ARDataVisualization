@@ -120,8 +120,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
         
         
         var values = generateFruitsValue()
-        var seriesLabels = parseSeriesLabels()
-        var indexLabels = parseIndexLabels()
+        var seriesLabels = parseFruitsSeries()
+        var indexLabels = parseFruitsIndex()
         
         
         dataSeries = ARDataSeries(withValues: values!)
@@ -379,6 +379,4 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
         barChart?.removeFromParentNode()
         barChart = nil
     }
-    
-    
 }
