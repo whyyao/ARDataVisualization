@@ -726,9 +726,9 @@ func generateSeries(year: String, month: String) -> [String]? {
             if (month != month) {
                 continue
             }
-            if let seriesLabel = lineEntries.first {
-                seriesLabels.append(seriesLabel)
-            }
+            let seriesLabel = lineEntries[2]
+            seriesLabels.append(seriesLabel)
+            
             
 //            let day = Int(lineEntries[2])
 //            if (day! > 10){

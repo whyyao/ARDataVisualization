@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E04BDB021A154480081AA2C /* 1999.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9021A154450081AA2C /* 1999.csv */; };
+		1E04BDB121A154480081AA2C /* 1994.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9121A154450081AA2C /* 1994.csv */; };
+		1E04BDB221A154480081AA2C /* 2007.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9221A154450081AA2C /* 2007.csv */; };
+		1E04BDB321A154480081AA2C /* 2008.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9321A154450081AA2C /* 2008.csv */; };
+		1E04BDB421A154480081AA2C /* 1980.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9421A154450081AA2C /* 1980.csv */; };
+		1E04BDB521A154480081AA2C /* 1978.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9521A154450081AA2C /* 1978.csv */; };
+		1E04BDB621A154480081AA2C /* 2001.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9621A154450081AA2C /* 2001.csv */; };
+		1E04BDB721A154480081AA2C /* 2000.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9721A154460081AA2C /* 2000.csv */; };
+		1E04BDB821A154480081AA2C /* 1982.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9821A154460081AA2C /* 1982.csv */; };
+		1E04BDB921A154480081AA2C /* 1992.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9921A154460081AA2C /* 1992.csv */; };
+		1E04BDBA21A154480081AA2C /* 2006.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9A21A154460081AA2C /* 2006.csv */; };
+		1E04BDBB21A154480081AA2C /* 1996.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9B21A154460081AA2C /* 1996.csv */; };
+		1E04BDBC21A154480081AA2C /* 1997.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9C21A154460081AA2C /* 1997.csv */; };
+		1E04BDBD21A154480081AA2C /* 1993.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9D21A154460081AA2C /* 1993.csv */; };
+		1E04BDBE21A154480081AA2C /* 1987.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9E21A154460081AA2C /* 1987.csv */; };
+		1E04BDBF21A154480081AA2C /* 1983.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BD9F21A154460081AA2C /* 1983.csv */; };
+		1E04BDC021A154480081AA2C /* 1985.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA021A154460081AA2C /* 1985.csv */; };
+		1E04BDC121A154480081AA2C /* 1989.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA121A154460081AA2C /* 1989.csv */; };
+		1E04BDC221A154480081AA2C /* 1981.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA221A154460081AA2C /* 1981.csv */; };
+		1E04BDC321A154480081AA2C /* 2002.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA321A154470081AA2C /* 2002.csv */; };
+		1E04BDC421A154480081AA2C /* 2003.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA421A154470081AA2C /* 2003.csv */; };
+		1E04BDC521A154480081AA2C /* 1990.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA521A154470081AA2C /* 1990.csv */; };
+		1E04BDC621A154480081AA2C /* 1979.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA621A154470081AA2C /* 1979.csv */; };
+		1E04BDC721A154480081AA2C /* 1995.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA721A154470081AA2C /* 1995.csv */; };
+		1E04BDC821A154480081AA2C /* 1991.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA821A154470081AA2C /* 1991.csv */; };
+		1E04BDC921A154480081AA2C /* 2005.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDA921A154470081AA2C /* 2005.csv */; };
+		1E04BDCA21A154480081AA2C /* 1998.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAA21A154470081AA2C /* 1998.csv */; };
+		1E04BDCB21A154480081AA2C /* 2004.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAB21A154480081AA2C /* 2004.csv */; };
+		1E04BDCC21A154480081AA2C /* 1988.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAC21A154480081AA2C /* 1988.csv */; };
+		1E04BDCD21A154480081AA2C /* 2009.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAD21A154480081AA2C /* 2009.csv */; };
+		1E04BDCE21A154480081AA2C /* 1984.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAE21A154480081AA2C /* 1984.csv */; };
+		1E04BDCF21A154480081AA2C /* 1986.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAF21A154480081AA2C /* 1986.csv */; };
 		1ED601A721A0AEAC00591A21 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1ED601A621A0AEAC00591A21 /* data.csv */; };
 		2097B7FE1F2901DA00E06831 /* ARChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097B7FD1F2901DA00E06831 /* ARChartLabel.swift */; };
 		20D557D31F1C0E0800924685 /* DataSample_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 20D557D01F1C0C3D00924685 /* DataSample_0.csv */; };
@@ -73,6 +105,38 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E04BD9021A154450081AA2C /* 1999.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1999.csv; sourceTree = "<group>"; };
+		1E04BD9121A154450081AA2C /* 1994.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1994.csv; sourceTree = "<group>"; };
+		1E04BD9221A154450081AA2C /* 2007.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2007.csv; sourceTree = "<group>"; };
+		1E04BD9321A154450081AA2C /* 2008.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2008.csv; sourceTree = "<group>"; };
+		1E04BD9421A154450081AA2C /* 1980.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1980.csv; sourceTree = "<group>"; };
+		1E04BD9521A154450081AA2C /* 1978.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1978.csv; sourceTree = "<group>"; };
+		1E04BD9621A154450081AA2C /* 2001.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2001.csv; sourceTree = "<group>"; };
+		1E04BD9721A154460081AA2C /* 2000.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2000.csv; sourceTree = "<group>"; };
+		1E04BD9821A154460081AA2C /* 1982.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1982.csv; sourceTree = "<group>"; };
+		1E04BD9921A154460081AA2C /* 1992.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1992.csv; sourceTree = "<group>"; };
+		1E04BD9A21A154460081AA2C /* 2006.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2006.csv; sourceTree = "<group>"; };
+		1E04BD9B21A154460081AA2C /* 1996.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1996.csv; sourceTree = "<group>"; };
+		1E04BD9C21A154460081AA2C /* 1997.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1997.csv; sourceTree = "<group>"; };
+		1E04BD9D21A154460081AA2C /* 1993.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1993.csv; sourceTree = "<group>"; };
+		1E04BD9E21A154460081AA2C /* 1987.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1987.csv; sourceTree = "<group>"; };
+		1E04BD9F21A154460081AA2C /* 1983.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1983.csv; sourceTree = "<group>"; };
+		1E04BDA021A154460081AA2C /* 1985.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1985.csv; sourceTree = "<group>"; };
+		1E04BDA121A154460081AA2C /* 1989.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1989.csv; sourceTree = "<group>"; };
+		1E04BDA221A154460081AA2C /* 1981.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1981.csv; sourceTree = "<group>"; };
+		1E04BDA321A154470081AA2C /* 2002.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2002.csv; sourceTree = "<group>"; };
+		1E04BDA421A154470081AA2C /* 2003.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2003.csv; sourceTree = "<group>"; };
+		1E04BDA521A154470081AA2C /* 1990.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1990.csv; sourceTree = "<group>"; };
+		1E04BDA621A154470081AA2C /* 1979.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1979.csv; sourceTree = "<group>"; };
+		1E04BDA721A154470081AA2C /* 1995.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1995.csv; sourceTree = "<group>"; };
+		1E04BDA821A154470081AA2C /* 1991.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1991.csv; sourceTree = "<group>"; };
+		1E04BDA921A154470081AA2C /* 2005.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2005.csv; sourceTree = "<group>"; };
+		1E04BDAA21A154470081AA2C /* 1998.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1998.csv; sourceTree = "<group>"; };
+		1E04BDAB21A154480081AA2C /* 2004.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2004.csv; sourceTree = "<group>"; };
+		1E04BDAC21A154480081AA2C /* 1988.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1988.csv; sourceTree = "<group>"; };
+		1E04BDAD21A154480081AA2C /* 2009.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2009.csv; sourceTree = "<group>"; };
+		1E04BDAE21A154480081AA2C /* 1984.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1984.csv; sourceTree = "<group>"; };
+		1E04BDAF21A154480081AA2C /* 1986.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1986.csv; sourceTree = "<group>"; };
 		1ED601A621A0AEAC00591A21 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 		2097B7FD1F2901DA00E06831 /* ARChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartLabel.swift; sourceTree = "<group>"; };
 		20D557D01F1C0C3D00924685 /* DataSample_0.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSample_0.csv; sourceTree = "<group>"; };
@@ -141,6 +205,38 @@
 		20D557CF1F1C0C3D00924685 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1E04BD9521A154450081AA2C /* 1978.csv */,
+				1E04BDA621A154470081AA2C /* 1979.csv */,
+				1E04BD9421A154450081AA2C /* 1980.csv */,
+				1E04BDA221A154460081AA2C /* 1981.csv */,
+				1E04BD9821A154460081AA2C /* 1982.csv */,
+				1E04BD9F21A154460081AA2C /* 1983.csv */,
+				1E04BDAE21A154480081AA2C /* 1984.csv */,
+				1E04BDA021A154460081AA2C /* 1985.csv */,
+				1E04BDAF21A154480081AA2C /* 1986.csv */,
+				1E04BD9E21A154460081AA2C /* 1987.csv */,
+				1E04BDAC21A154480081AA2C /* 1988.csv */,
+				1E04BDA121A154460081AA2C /* 1989.csv */,
+				1E04BDA521A154470081AA2C /* 1990.csv */,
+				1E04BDA821A154470081AA2C /* 1991.csv */,
+				1E04BD9921A154460081AA2C /* 1992.csv */,
+				1E04BD9D21A154460081AA2C /* 1993.csv */,
+				1E04BD9121A154450081AA2C /* 1994.csv */,
+				1E04BDA721A154470081AA2C /* 1995.csv */,
+				1E04BD9B21A154460081AA2C /* 1996.csv */,
+				1E04BD9C21A154460081AA2C /* 1997.csv */,
+				1E04BDAA21A154470081AA2C /* 1998.csv */,
+				1E04BD9021A154450081AA2C /* 1999.csv */,
+				1E04BD9721A154460081AA2C /* 2000.csv */,
+				1E04BD9621A154450081AA2C /* 2001.csv */,
+				1E04BDA321A154470081AA2C /* 2002.csv */,
+				1E04BDA421A154470081AA2C /* 2003.csv */,
+				1E04BDAB21A154480081AA2C /* 2004.csv */,
+				1E04BDA921A154470081AA2C /* 2005.csv */,
+				1E04BD9A21A154460081AA2C /* 2006.csv */,
+				1E04BD9221A154450081AA2C /* 2007.csv */,
+				1E04BD9321A154450081AA2C /* 2008.csv */,
+				1E04BDAD21A154480081AA2C /* 2009.csv */,
 				1ED601A621A0AEAC00591A21 /* data.csv */,
 				20D557D01F1C0C3D00924685 /* DataSample_0.csv */,
 				C3C2EC6A1F2543D2001EC280 /* DataSample_1.csv */,
@@ -332,11 +428,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36287521F0E084800B6598D /* LaunchScreen.storyboard in Resources */,
+				1E04BDC521A154480081AA2C /* 1990.csv in Resources */,
+				1E04BDB621A154480081AA2C /* 2001.csv in Resources */,
+				1E04BDB721A154480081AA2C /* 2000.csv in Resources */,
+				1E04BDB821A154480081AA2C /* 1982.csv in Resources */,
+				1E04BDB121A154480081AA2C /* 1994.csv in Resources */,
+				1E04BDCE21A154480081AA2C /* 1984.csv in Resources */,
 				C362874F1F0E084800B6598D /* Assets.xcassets in Resources */,
+				1E04BDC621A154480081AA2C /* 1979.csv in Resources */,
+				1E04BDC321A154480081AA2C /* 2002.csv in Resources */,
+				1E04BDCF21A154480081AA2C /* 1986.csv in Resources */,
+				1E04BDC921A154480081AA2C /* 2005.csv in Resources */,
+				1E04BDB521A154480081AA2C /* 1978.csv in Resources */,
+				1E04BDB921A154480081AA2C /* 1992.csv in Resources */,
+				1E04BDC221A154480081AA2C /* 1981.csv in Resources */,
+				1E04BDCC21A154480081AA2C /* 1988.csv in Resources */,
+				1E04BDBD21A154480081AA2C /* 1993.csv in Resources */,
+				1E04BDBE21A154480081AA2C /* 1987.csv in Resources */,
+				1E04BDB421A154480081AA2C /* 1980.csv in Resources */,
+				1E04BDB021A154480081AA2C /* 1999.csv in Resources */,
+				1E04BDBC21A154480081AA2C /* 1997.csv in Resources */,
+				1E04BDBF21A154480081AA2C /* 1983.csv in Resources */,
+				1E04BDC721A154480081AA2C /* 1995.csv in Resources */,
 				1ED601A721A0AEAC00591A21 /* data.csv in Resources */,
+				1E04BDCA21A154480081AA2C /* 1998.csv in Resources */,
 				20D557D31F1C0E0800924685 /* DataSample_0.csv in Resources */,
+				1E04BDC821A154480081AA2C /* 1991.csv in Resources */,
+				1E04BDCB21A154480081AA2C /* 2004.csv in Resources */,
+				1E04BDB221A154480081AA2C /* 2007.csv in Resources */,
 				C362874D1F0E084800B6598D /* Main.storyboard in Resources */,
+				1E04BDB321A154480081AA2C /* 2008.csv in Resources */,
+				1E04BDBB21A154480081AA2C /* 1996.csv in Resources */,
+				1E04BDC021A154480081AA2C /* 1985.csv in Resources */,
+				1E04BDC121A154480081AA2C /* 1989.csv in Resources */,
+				1E04BDC421A154480081AA2C /* 2003.csv in Resources */,
+				1E04BDCD21A154480081AA2C /* 2009.csv in Resources */,
 				C3C2EC6B1F2543D2001EC280 /* DataSample_1.csv in Resources */,
+				1E04BDBA21A154480081AA2C /* 2006.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
