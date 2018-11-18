@@ -345,7 +345,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
     
     private func setupGraph() {
         barChart?.animationType = settings.animationType
-        barChart?.size = SCNVector3(settings.graphWidth, settings.graphHeight, settings.graphLength)
+        barChart?.size = SCNVector3(settings.graphWidth, settings.graphHeight, 10)
     }
     
     // MARK: Navigation
