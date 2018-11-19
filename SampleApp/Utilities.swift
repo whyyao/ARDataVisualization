@@ -641,9 +641,8 @@ func generateFruitsValue() -> [[Double]]? {
 }
 
 func generateValue(year: String, month: String) -> [[Double]]? {
-    let filename = "data"
-    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
-        print(String(format: "Could Not Load Data Sample File %@", filename))
+    guard let dataPath = Bundle.main.path(forResource: year, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", year))
         return nil
     }
     
@@ -663,7 +662,8 @@ func generateValue(year: String, month: String) -> [[Double]]? {
                     continue
                 }
                 print(lineEntries[9])
-                let double : Double = Double(lineEntries[9])!
+                let double : Double = Double(lineEntries[9])! * 2
+            
                 print(double)
                 var entry = [Double]()
                 entry.append(Double(double))
@@ -708,9 +708,8 @@ func parseFruitsSeries() -> [String]? {
 }
 
 func generateSeries(year: String, month: String) -> [String]? {
-    let filename = "data"
-    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
-        print(String(format: "Could Not Load Data Sample File %@", filename))
+    guard let dataPath = Bundle.main.path(forResource: year, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", year))
         return nil
     }
     var seriesLabels: [String] = []
@@ -727,7 +726,7 @@ func generateSeries(year: String, month: String) -> [String]? {
                 continue
             }
             let seriesLabel = lineEntries[2]
-            seriesLabels.append(seriesLabel)
+            seriesLabels.append(month + ", " + seriesLabel)
             
             
 //            let day = Int(lineEntries[2])
@@ -766,9 +765,9 @@ func parseFruitsIndex() -> [String]? {
 }
 
 func parseIndex(year: String, month: String) -> [String]? {
-    let filename = "data"
-    guard let dataPath = Bundle.main.path(forResource: filename, ofType: "csv") else {
-        print(String(format: "Could Not Load Data Sample File %@", filename))
+
+    guard let dataPath = Bundle.main.path(forResource: year, ofType: "csv") else {
+        print(String(format: "Could Not Load Data Sample File %@", year))
         return nil
     }
     var indexLabels: [String] = []
