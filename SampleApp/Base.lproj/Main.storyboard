@@ -356,6 +356,28 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nLi-ZF-6eY">
+                                        <rect key="frame" x="0.0" y="600" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nLi-ZF-6eY" id="VA5-jb-nel">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEJ-49-8IR">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="CEJ-49-8IR" secondAttribute="bottom" constant="8" id="Jqh-TZ-azX"/>
+                                                <constraint firstItem="CEJ-49-8IR" firstAttribute="top" secondItem="VA5-jb-nel" secondAttribute="top" constant="8" id="cRu-AN-BV6"/>
+                                                <constraint firstItem="CEJ-49-8IR" firstAttribute="leading" secondItem="VA5-jb-nel" secondAttribute="leading" constant="8" id="dQO-Ia-7s9"/>
+                                                <constraint firstAttribute="trailing" secondItem="CEJ-49-8IR" secondAttribute="trailing" constant="8" id="zmP-hZ-c54"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -381,6 +403,7 @@
                         <outlet property="entranceAnimationSegmentedControl" destination="jDg-rG-Umm" id="TN2-yU-DRl"/>
                         <outlet property="heightLabel" destination="z8M-c5-zgj" id="KkZ-Pe-wNT"/>
                         <outlet property="heightSlider" destination="RSi-xM-b05" id="jNA-qn-zGk"/>
+                        <outlet property="inputTextField" destination="CEJ-49-8IR" id="4lE-sP-3DE"/>
                         <outlet property="labelSwitch" destination="kwP-LI-jwK" id="Xsj-Lr-xPI"/>
                         <outlet property="lengthLabel" destination="2uP-1p-7oi" id="Sxh-Bq-bEM"/>
                         <outlet property="lengthSlider" destination="mFk-gd-9uG" id="t91-4h-ucR"/>

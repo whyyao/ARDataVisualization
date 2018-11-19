@@ -648,7 +648,7 @@ func generateValue(year: String, month: String) -> [[Double]]? {
     
     var data = [[Double]]()
     if let dataString = try? String(contentsOfFile: dataPath) {
-        let lines = dataString.components(separatedBy: "\r\n")
+        let lines = dataString.components(separatedBy: "\r\n").dropLast()
         let headerEntries = lines[0].components(separatedBy: ",")
         for line in lines[1...] {
             let lineEntries = line.components(separatedBy: ",")
@@ -714,7 +714,7 @@ func generateSeries(year: String, month: String) -> [String]? {
     }
     var seriesLabels: [String] = []
     if let dataString = try? String(contentsOfFile: dataPath) {
-        let lines = dataString.components(separatedBy: "\n")
+        let lines = dataString.components(separatedBy: "\n").dropLast()
         for line in lines[1...] {
             let lineEntries = line.components(separatedBy: ",")
             let year = lineEntries[0]

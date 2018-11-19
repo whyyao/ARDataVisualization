@@ -21,7 +21,7 @@ struct Settings {
     var graphHeight: Float = 0.3
     var graphLength: Float = 0.3
     var dataSet: Int = 0
-    
+    var year: String = "1978"
     public func index(forEntranceAnimationType animationType: ARChartPresenter.AnimationType?) -> Int {
         guard let animationType = animationType else {
             return 0

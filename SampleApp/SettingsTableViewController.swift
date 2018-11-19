@@ -32,10 +32,26 @@ class SettingsTableViewController: UITableViewController {
     
     @IBOutlet weak var dataSetSegmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var inputTextField: UITextField!
+    
+   
+    private var datePicker: UIDatePicker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        datePicker?.addTarget(self, action: #selector(SettingsTableViewController.dateChanged(datePicker:)), for: .valueChanged)
+        inputTextField.inputView = datePicker
         setupControlsState()
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker ) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        inputTextField.text = dateFormatter.string(from: datePicker.date)
+        settings?.year = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
     }
     
     private func setupControlsState() {
