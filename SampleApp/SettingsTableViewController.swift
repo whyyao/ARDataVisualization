@@ -34,25 +34,29 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var inputTextField: UITextField!
     
    
-    private var datePicker: UIDatePicker?
+    private var datePicker: MonthYearPickerView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .date
-        datePicker?.addTarget(self, action: #selector(SettingsTableViewController.dateChanged(datePicker:)), for: .valueChanged)
+        datePicker = MonthYearPickerView()
+        datePicker?.onDateSelected = { (month: Int, year: Int) in
+            self.settings?.year = String(year)
+            self.settings?.month = String(month)
+            self.view.endEditing(true)
+        }
         inputTextField.inputView = datePicker
         setupControlsState()
     }
     
-    @objc func dateChanged(datePicker: UIDatePicker ) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy"
-        inputTextField.text = dateFormatter.string(from: datePicker.date)
-        settings?.year = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
-    }
-    
+//    @objc func dateChanged(datePicker: UIDatePicker ) {
+////        let dateFormatter = DateFormatter()
+////        dateFormatter.dateFormat = "yyyy"
+////        inputTextField.text = dateFormatter.string(from: datePicker.date)
+//        settings?.year = String(month)
+//
+//        view.endEditing(true)
+//    }
+//
     private func setupControlsState() {
         guard let settings = settings else {
             return

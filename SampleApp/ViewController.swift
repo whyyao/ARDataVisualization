@@ -119,10 +119,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, SettingsDelegate, UIP
         //        var indexLabels = Array(0..<values.first!.count).map({ "Index \($0)" })
         
         
-        var values = generateValue(year: settings.year, month: "10")
+        let values = generateValue(year: settings.year, month: settings.month)
         print(values!)
-        var seriesLabels = generateSeries(year: settings.year, month: "10")
-        var indexLabels = parseIndex(year: settings.year, month: "10")
+        let seriesLabels = generateSeries(year: settings.year, month: settings.month)
+        let indexLabels = parseIndex(year: settings.year, month: settings.month)
         
         
         dataSeries = ARDataSeries(withValues: values!)

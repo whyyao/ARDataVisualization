@@ -661,13 +661,15 @@ func generateValue(year: String, month: String) -> [[Double]]? {
                 if (month != month) {
                     continue
                 }
-                print(lineEntries[9])
+                if (month == month) {
+//                print(lineEntries[9])
                 let double : Double = Double(lineEntries[9])! * 2
             
-                print(double)
+//                print(double)
                 var entry = [Double]()
                 entry.append(Double(double))
                 data.append(entry)
+                }
                 
 //                let day = Int(lineEntries[2])
 //                if (day! > 10){
@@ -722,12 +724,11 @@ func generateSeries(year: String, month: String) -> [String]? {
                 continue
             }
             let month = lineEntries[1]
-            if (month != month) {
-                continue
+            if (month == month) {
+                let seriesLabel = lineEntries[2]
+                seriesLabels.append(year + "." + month + "." + seriesLabel)
+                
             }
-            let seriesLabel = lineEntries[2]
-            seriesLabels.append(month + ", " + seriesLabel)
-            
             
 //            let day = Int(lineEntries[2])
 //            if (day! > 10){

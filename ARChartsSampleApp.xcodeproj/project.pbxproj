@@ -39,6 +39,7 @@
 		1E04BDCD21A154480081AA2C /* 2009.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAD21A154480081AA2C /* 2009.csv */; };
 		1E04BDCE21A154480081AA2C /* 1984.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAE21A154480081AA2C /* 1984.csv */; };
 		1E04BDCF21A154480081AA2C /* 1986.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1E04BDAF21A154480081AA2C /* 1986.csv */; };
+		1E4440A621ABF5F300184994 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4440A521ABF5F300184994 /* MonthYearPickerView.swift */; };
 		1ED601A721A0AEAC00591A21 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1ED601A621A0AEAC00591A21 /* data.csv */; };
 		2097B7FE1F2901DA00E06831 /* ARChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097B7FD1F2901DA00E06831 /* ARChartLabel.swift */; };
 		20D557D31F1C0E0800924685 /* DataSample_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 20D557D01F1C0C3D00924685 /* DataSample_0.csv */; };
@@ -137,6 +138,7 @@
 		1E04BDAD21A154480081AA2C /* 2009.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2009.csv; sourceTree = "<group>"; };
 		1E04BDAE21A154480081AA2C /* 1984.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1984.csv; sourceTree = "<group>"; };
 		1E04BDAF21A154480081AA2C /* 1986.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1986.csv; sourceTree = "<group>"; };
+		1E4440A521ABF5F300184994 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
 		1ED601A621A0AEAC00591A21 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 		2097B7FD1F2901DA00E06831 /* ARChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartLabel.swift; sourceTree = "<group>"; };
 		20D557D01F1C0C3D00924685 /* DataSample_0.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSample_0.csv; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				C362874E1F0E084800B6598D /* Assets.xcassets */,
 				C36287501F0E084800B6598D /* LaunchScreen.storyboard */,
 				C36287531F0E084800B6598D /* Info.plist */,
+				1E4440A521ABF5F300184994 /* MonthYearPickerView.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4440A621ABF5F300184994 /* MonthYearPickerView.swift in Sources */,
 				FC4628191F28EF090037FB5B /* Settings.swift in Sources */,
 				C3BD6FB21F13470E0042479D /* Utilities.swift in Sources */,
 				FC4628171F2868920037FB5B /* SettingsTableViewController.swift in Sources */,
