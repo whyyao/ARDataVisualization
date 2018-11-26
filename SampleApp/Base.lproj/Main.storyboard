@@ -304,10 +304,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-eb-9Te">
-                                                    <rect key="frame" x="129" y="48" width="117" height="29"/>
+                                                    <rect key="frame" x="92" y="48" width="191" height="29"/>
                                                     <segments>
-                                                        <segment title="Fruit"/>
-                                                        <segment title="Growth"/>
+                                                        <segment title="Q"/>
+                                                        <segment title="Rp"/>
+                                                        <segment title="Rp-high"/>
                                                     </segments>
                                                     <connections>
                                                         <action selector="handleDataSetValueChange:" destination="gzb-DA-RSG" eventType="valueChanged" id="OGl-qo-6D3"/>
