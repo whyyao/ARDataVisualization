@@ -17,8 +17,7 @@ class SettingsTableViewController: UITableViewController {
     
     var settings: Settings?
     var delegate: SettingsDelegate?
-    
-    @IBOutlet weak var longPressAnimationSegmentedControl: UISegmentedControl!
+
     @IBOutlet weak var entranceAnimationSegmentedControl: UISegmentedControl!
     @IBOutlet weak var opacitySlider: UISlider!
     @IBOutlet weak var opacityLabel: UILabel!
@@ -60,7 +59,6 @@ class SettingsTableViewController: UITableViewController {
         }
         
         entranceAnimationSegmentedControl.selectedSegmentIndex = settings.index(forEntranceAnimationType: settings.animationType)
-        longPressAnimationSegmentedControl.selectedSegmentIndex = settings.index(forLongPressAnimationType: settings.longPressAnimationType)
         opacitySlider.value = settings.barOpacity
         opacityLabel.text = String(format: "%.1f", arguments: [opacitySlider.value])
         labelSwitch.isOn = settings.showLabels
@@ -80,14 +78,6 @@ class SettingsTableViewController: UITableViewController {
             settings?.animationType = entranceAnimationType
         } else {
             settings?.animationType = .fade
-        }
-    }
-    
-    @IBAction func handleLongPressAnimationSegmentControlValueChange(_ sender: UISegmentedControl) {
-        if let longPressAnimationType = settings?.longPressAnimationType(forIndex: sender.selectedSegmentIndex){
-            settings?.longPressAnimationType = longPressAnimationType
-        } else {
-            settings?.longPressAnimationType = .shrink
         }
     }
     

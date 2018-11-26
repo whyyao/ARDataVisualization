@@ -18,7 +18,7 @@ struct Settings {
     var numberOfSeries = 10
     var numberOfIndices = 10
     var graphWidth: Float = 0.3
-    var graphHeight: Float = 0.3
+var graphHeight: Float = 0.3
     var graphLength: Float = 0.3
     var dataSet: Int = 0
     var year: String = "1978"
